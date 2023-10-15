@@ -1,0 +1,302 @@
+/* importammos las fuentes desde googleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+
+* {
+  /* cuando hay espacio hay que poner entre comilla */
+  font-family: "Titillim Web";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* seccion inicio */
+.inicio {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(/Imagenes/fondos.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.inicio .contenido_seccion {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.inicio .contenido_seccion header {
+  padding: 30px;
+}
+
+/* menu lateral */
+.inicio .contenido_seccion header nav {
+  position: fixed;
+  margin-left: 60px;
+  background-color: #940253;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 99;
+  /* esto oculta la  */
+  display: none;
+}
+
+.inicio .contenido_seccion header nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* *********** */
+/* esto es para dar el eatilo a la letras AB */
+.inicio .contenido_seccion header .logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Yellowtail";
+  text-shadow: 0 0 35px #fff;
+}
+.inicio .contenido_seccion header .color {
+  color: #309402;
+  font-family: "Yellowtail";
+}
+
+/* esrilo de las tres rayitas de navegacion */
+.inicio .contenido_seccion header .nav_bar {
+  /* mueve el logo  */
+  position: fixed;
+  background-color: #940253;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* es la altura entre lineas de un texto o bloque */
+  line-height: 50px;
+  /* hace que el cursor se vuelva una manito */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inicio .contenido_seccion header .nav_bar:hover {
+  box-shadow: 0 0 35px #fff;
+}
+
+/* los nombres y la carrera */
+.inicio .contenido_seccion .info {
+  padding-bottom: 130px;
+}
+
+.inicio .contenido_seccion .info h1 {
+  font-size: 3rem;
+  /* espasiado entre letras */
+  letter-spacing: 5px;
+}
+
+.inicio .contenido_seccion .info h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -10px;
+  letter-spacing: 2px;
+}
+
+/* redes sociales */
+.inicio .contenido_seccion .info .redes {
+  margin: 20px;
+}
+
+/* diseño de los logos de las redes sociales */
+.inicio .contenido_seccion .info .redes a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #940253;
+  border: 1px solid #940253;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.inicio .contenido_seccion .info .redes a:hover {
+  color: #fff;
+  background-color: #940253;
+  box-shadow: 0 0 20px #fff;
+}
+/* foto */
+.inicio .contenido_seccion .foto {
+  position: relative;
+}
+
+.inicio .contenido_seccion .foto img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid #940253;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+/* estilos generales */
+.titulo_seccion {
+  /* esto cambia el titulo sobre mi  */
+  font-family: "Yellowtail";
+  font-size: 1.5rem;
+}
+/* seccion sobre mi */
+.sobre_mi {
+  background-color: #e6e6e6;
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+
+.sobre_mi .contenido_seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.sobre_mi .contenido_seccion h3 {
+  /* cambia las letras a mayusculas */
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.sobre_mi .contenido_seccion .especial {
+  color: #940253;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.sobre_mi .contenido_seccion p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+}
+
+/* mover cada parrafo en una fila */
+.sobre_mi .contenido_seccion .fila {
+  /* mueve los parrafos */
+  display: flex;
+  margin-top: 30px;
+  /* los espacio entre parrafos en la fila */
+  justify-content: space-between;
+}
+
+.sobre_mi .contenido_seccion .fila .col {
+  width: 30%;
+}
+
+/* modificar los iconos */
+.sobre_mi .contenido_seccion .fila .col i {
+  color: #940253;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #940253;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+/* poner los nombres de los iconos debajo */
+.sobre_mi .contenido_seccion .fila .col span {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* seccion de habilidades */
+.habilidades {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(/Imagenes/vishnu-r-nair-1TFbqhRlCCc-unsplash.jpg);
+  /* tamaño de la img */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #fff;
+}
+
+.habilidades .contenido_seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.habilidades .contenido_seccion h3 {
+  /* cambia las letras a mayusculas */
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.habilidades .contenido_seccion .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.habilidades .contenido_seccion .fila .col {
+  width: 47%;
+  text-align: left;
+}
+
+.habilidades .contenido_seccion .fila .col .conta_barra {
+  display: flex;
+  align-items: center;
+}
+
+/* crea barra contenedora */
+.habilidades .contenido_seccion .barra {
+  display: flex;
+  border: 1px solid #940253;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* cera las fracciones de la barra */
+.habilidades .contenido_seccion .barra .e {
+  background-color: #363636;
+  width: 20px;
+  height: 30px;
+  margin-right: 2px;
+}
+
+/* seccion contacto */
+.contacto {
+  background-color: #202020;
+  padding: 140px 0 100px 0;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+.contacto .contenido_seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.contacto .contenido_seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.contacto .contenido_seccion .fila {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto .contenido_seccion .fila .col {
+  margin-top: 50px;
+}
+
+.contacto .contenido_seccion .fila .col h2 {
+  color: #940253;
+}

@@ -1,0 +1,189 @@
+/* importammos las fuentes desde googleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillim Web";
+  color: #666;
+}
+body {
+  background: url(/Imagenes/patrick-tomasso-ymuAM4S2fxI-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+h2.center {
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+.img-izquierda {
+  /*float: left;
+    padding-right: 10px;
+    border-style: double;*/
+  float: left;
+  margin-right: 20px;
+  border-style: solid;
+}
+
+.img-derecha {
+  /*float: right;
+    padding-left: 20px;*/
+  float: right;
+  margin-left: 20px;
+  border-style: solid;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+  /* margin-top: 100px; */
+}
+
+.lbl-menu {
+  background: #202020;
+  text-align: center;
+  padding: 10px;
+  /* border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto; */
+}
+
+.lbl-menu label {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 400ms ease;
+  border-radius: 10px;
+}
+
+.lbl-menu label:hover {
+  background-color: #940253;
+  box-shadow: 0 0 35px #fff;
+}
+
+.content {
+  position: relative;
+}
+
+.content div {
+  position: absolute;
+  line-height: 1.8;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  padding: 30px;
+  background-color: #e6e6e6;
+  padding-bottom: 40px;
+}
+
+#radio1,
+#radio2,
+#radio3,
+#radio4,
+#radio5,
+#radio6 {
+  display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4,
+#radio5:checked ~ .tab5,
+#radio6:checked ~ .tab6 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  font-family: "Titillim Web";
+  display: inline;
+  /* Ajusta el espaciado interno del botón */
+  padding: 10px 20px;
+  /* Color de fondo del botón */
+  background-color: #202020;
+  /* Borde del botón */
+  border: none;
+  /* Bordes redondeados del botón */
+  border-radius: 5px;
+  /* Transición de color de fondo en hover */
+  transition: 0.3s;
+
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: #940253;
+  box-shadow: 0 0 35px #000;
+}
+
+/* .content div:after {
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    
+    bottom: 100%;
+    left: 28px;
+} */
+
+/* .content .tab1:after {
+    left: 80px;
+}
+
+.content .tab2:after {
+    left: 300px;
+}
+
+.content .tab3:after {
+    left: 540px;
+}
+
+.content .tab4:after {
+    left: 815px;
+}
+
+.content .tab5:after {
+    left: 975px;
+}
+
+.content .tab6:after {
+    left: 1192px;
+} */
+
+.circle-list {
+  padding-left: 30px;
+}

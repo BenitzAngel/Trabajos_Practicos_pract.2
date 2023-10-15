@@ -1,0 +1,71 @@
+/* importammos las fuentes desde googleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+
+* {
+  /* cuando hay espacio hay que poner entre comilla */
+  font-family: "Titillim Web";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(/Imagenes/fondo2.jpg);
+  /* hace que la imagen se ajuste y cubra toda la ventana del navegador. */
+  background-size: cover;
+  /* para que la imagen no se repita */
+  background-repeat: no-repeat;
+  /*  fija la imagen de fondo en la ventana, si el usuario hace scrol la img lo sige  */
+  background-attachment: fixed;
+  /* centra la imagen */
+  background-position: center;
+}
+/* esto es para dar el eatilo a la letras AB */
+header nav .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Yellowtail";
+  text-shadow: 0 0 35px #fff;
+}
+
+header nav .color {
+  color: #309402;
+  font-family: "Yellowtail";
+}
+
+header nav {
+  background-color: #202020;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 10px;
+  /* separa el el logo ab de las listas  */
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav .menu {
+  list-style: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav .menu li {
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+header nav .menu li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+header nav .menu li:hover {
+  background-color: #940253;
+  box-shadow: 0 0 35px #fff;
+}

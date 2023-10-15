@@ -1,0 +1,117 @@
+/* importammos las fuentes desde googleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+
+* {
+  /* cuando hay espacio hay que poner entre comilla */
+  font-family: "Titillim Web";
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/Imagenes/fondo_1.jpg);
+  /* hace que la imagen se ajuste y cubra toda la ventana del navegador. */
+  background-size: cover;
+  /* para que la imagen no se repita */
+  background-repeat: no-repeat;
+  /*  fija la imagen de fondo en la ventana, si el usuario hace scrol la img lo sige  */
+  background-attachment: fixed;
+  /* sentra la imagen */
+  background-position: center;
+  /* Ajusta el valor para controlar la cantidad de desenfoque */
+  /* backdrop-filter: blur(8px); */
+}
+
+.encabezado {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.contenido {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.contenido .articulo p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.contenido .articulo h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.contenido article .imagen {
+  padding: 10px;
+}
+
+.contenido .articulo .imagen img {
+  max-width: 800px;
+  margin: 10px;
+}
+
+.contenido .articulo h4 {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* ##########   BOTON  ################# */
+
+footer {
+  /* Espaciado interno del footer */
+  padding: 20px;
+  /* Centrar el contenido horizontalmente */
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  /* Centrar el contenido horizontalmente */
+  justify-content: center;
+  /* Centrar el contenido verticalmente */
+  align-items: center;
+  /* Ajusta la altura del footer según tus necesidades */
+  height: 100px;
+}
+
+.btn {
+  font-family: "Titillim Web";
+  display: inline-block;
+  /* Ajusta el espaciado interno del botón */
+  padding: 10px 20px;
+  /* Color de fondo del botón */
+  background-color: #202020;
+  /* Color del texto del botón */
+  color: #fff;
+  /* Quitar subrayado del enlace */
+  text-decoration: none;
+  /* Borde del botón */
+  border: none;
+  /* Bordes redondeados del botón */
+  border-radius: 5px;
+  /* Transición de color de fondo en hover */
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #940253;
+  box-shadow: 0 0 35px #fff;
+}

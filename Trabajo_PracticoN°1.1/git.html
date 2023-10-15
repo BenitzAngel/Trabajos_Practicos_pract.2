@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIT HUB</title>
+
+    <link rel="stylesheet" href="/estilos/git.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <h1>¿QUÉ ES GIT Y GIT HUB?</h1>
+    </header>
+    <section class="contenido">
+      <article class="articulo">
+        <h2>Git</h2>
+
+        <p>
+          Git es un <strong>sistema de control de versiones</strong> gratuito y
+          de código abierto, diseñado para manejar desde pequeños a grandes
+          proyectos de manera rápida y eficaz. Se entiende como control de
+          versiones a todas las herramientas que nos permiten hacer
+          modificaciones en nuestro proyecto. Un sistema que
+          <strong>
+            registra los cambios realizados sobre un archivo o conjunto de
+            archivos a lo largo del tiempo.
+          </strong>
+
+          <br />
+          Un sistema de control de versiones permite a sus usuarios almacenar
+          revisiones diferentes de un mismo archivo y compararlas, restaurarlas
+          y a veces mezclarlas.
+        </p>
+
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen_1.png" alt="1" />
+        </div>
+
+        <h2>LOS 3 ESTADOS</h2>
+        <p>
+          <b>Modificado</b> (1er estato): significa que modificamos el archivo
+          pero todavía no lo hemos confirmado a nuestro repositorio.
+          <br /><br />
+          <b>Preparado</b> (2do estado): significa que marcamos un archivo
+          modificado en su versión actual para que vaya en tu próxima
+          confirmación. <br /><br />
+          <b>Confirmado</b> (3er estaso): significa que los datos están
+          almacenados de manera segura en nuestro repositorio local.
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen2.png" alt="2" />
+        </div>
+
+        <h2>Sentencias del del git</h2>
+        <h4>git init</h4>
+        <p>
+          Este comando se usa para crear un nuevo repositorio en Git. Nos crea
+          un repositorio de manera local y lo hará en la carpeta donde estamos
+          posicionados. También se le puede pasar [nombre_de_la_carpeta] y
+          creará una con ese nombre. Por ejemplo:
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen3.png" alt="3" />
+        </div>
+
+        <h4>git status</h4>
+        <p>
+          Nos permite saber que archivos hemos creado o modificado. En este caso
+          se creo un nuevo achivo html llamado index.html, cuando hacemos la
+          sentecia git status nos muestra el nombre del archivo en rojo, dando a
+          entender que se a creado o modificado dicho archivo.
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen4.png" alt="4" />
+        </div>
+
+        <h4>git add .</h4>
+        <p>
+          Agregará todos los archivos modificados y/o no trackeados al área de
+          <strong>stage.</strong>stage.
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen5.png" alt="5" />
+          <img src="/Imagenes/img_git/git_imagen6.png" alt="6" />
+        </div>
+
+        <h4>git commit -m</h4>
+        <p>
+          Una vez que nuestros archivos están en el Staging Area debemos
+          pasarlos a nuestro repositorio local y para eso debemos usar el git
+          commit que es el comando que nos va a permitir comprometer nuestros
+          archivos. Es decir, que lo subirá al repositorio que se ha creado. El
+          comando es el siguiente: <br /><br />
+          <b
+            >git commit -m “Comentario de qué se trata el commit que se está
+            realizando”</b
+          >
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen7.png" alt="7" />
+          <img src="/Imagenes/img_git/git_imagen8.png" alt="8" />
+        </div>
+        <h4>git log</h4>
+        <p>
+          El comando git log se utiliza en Git para mostrar un registro de
+          confirmaciones (commits) en un repositorio. Proporciona información
+          detallada sobre las confirmaciones, como el autor, la fecha, el
+          mensaje del commit
+        </p>
+        <div class="imagen">
+          <img src="/Imagenes/img_git/git_imagen9.png" alt="9" />
+        </div>
+
+        <h4>el archivo .gitignore</h4>
+        <p>
+          A veces es necesario indicar a Git que no realice seguimiento alguno
+          sobre algunos archivos. Para esos casos contamos con un archivo
+          especial que llamaremos .gitignore donde podemos definir las reglas de
+          los archivos a ignorar. Vamos a usar nuestro editor para crear un
+          nuevo archivo llamado privado.txt. <br />
+          Una vez creado, si ejecutamos el comando git status podemos ver que
+          figura como archivo no trackeado. Para hacer que Git ignore por
+          completo este archivo, simplemente creamos el archivo .gitignore
+          (punto gitignore) en la carpeta raíz de nuestro repositorio y
+          escribimos en él la ruta del archivo que queremos ignorar, en nuestro
+          caso, privado.txt. Si ejecutamos una vez más el comando git status ,
+          vemos que privado.txt ya no aparece como archivo nuevo. El que aparece
+          ahora es .gitignore, que debemos agregar y commitear para hacer
+          permanente nuestra lista de archivos ignorados.
+        </p>
+
+        <h2>Git hub</h2>
+        <p>
+          Github es un sitio web y servicio gratuito de alojamiento de
+          repositorios Git. Cualquier persona o empresa puede abrir una cuenta y
+          alojar la cantidad de repositorios que desee. Es importante tener en
+          cuenta que, por defecto, los repositorios alojados en Github son
+          públicos. Esto quiere decir que cualquier usuario (o no) podrá acceder
+          al código allí alojado, aunque no podrá realizar modificaciones sin
+          que algún administrador o dueño del repositorio en cuestión le brinde
+          acceso de escritura. Además de brindarnos alojamiento gratuito para
+          nuestros repositorios, Github nos ofrece varias herramientas
+          adicionales orientadas principalmente a la colaboración.
+        </p>
+      </article>
+    </section>
+    <footer>
+      <div class="contenedor">
+        <a href="index.html" class="btn">Volver</a>
+      </div>
+    </footer>
+  </body>
+</html>
